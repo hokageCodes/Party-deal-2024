@@ -1,8 +1,19 @@
 /********** Template CSS **********/
+@font-face{
+    font-family: 'Lora';
+    src: url(Lora-VariableFont_wght.ttf);
+    src: url(PlayfairDisplay-VariableFont_wght.ttf);
+    src: url(SourceSans3-VariableFont_wght.ttf);
+    src: url(Montserrat-VariableFont_wght.ttf);
+}
 :root {
     --primary: #FF7F50;
     --light: #F8F8F8;
     --dark: #3E4551;
+}
+
+body {
+    background: #181D25;
 }
 
 h1,
@@ -11,6 +22,14 @@ h2,
 .h2,
 .fw-bold {
     font-weight: 600 !important;
+    color: #F4F0F0;
+}
+h1 {
+    font-family: 'Playfair Display';
+}
+p {
+    font-family: 'Source Sans 3';
+    color:#F4F0F0;
 }
 
 h3,
@@ -19,6 +38,11 @@ h4,
 .h4,
 .fw-medium {
     font-weight: 500 !important;
+    color:#F5F5F5;
+    font-family: 'Lora';
+}
+h2 {
+    font-family: 'Lora';
 }
 
 h5,
@@ -26,6 +50,7 @@ h6,
 .h5,
 .h6,
 .fw-normal {
+    font-family: 'Lora';
     font-weight: 400 !important;
 }
 
@@ -55,6 +80,7 @@ h6,
 
 /*** Button ***/
 .btn {
+    font-family: 'Playfair Display';
     font-weight: 500;
     transition: .5s;
 }
@@ -102,6 +128,9 @@ h6,
 
 
 /*** Navbar ***/
+.navbar {
+    font-family: 'Lora';
+}
 .navbar .dropdown-toggle::after {
     border: none;
     content: "\f107";
@@ -242,7 +271,7 @@ h6,
 }
 
 .page-header {
-    background: linear-gradient(rgba(0, 0, 0, .5), rgba(0, 0, 0, .5)), url(../img/about-banner.png) center center no-repeat;
+    background: linear-gradient(rgba(0, 0, 0, .5), rgba(0, 0, 0, .5)), url(../img/abb.png) center center no-repeat;
     background-size: cover;
 }
 
@@ -286,6 +315,9 @@ h6,
 .fact-item:hover .fact-icon i {
     color: #FFFFFF;
 }
+.fact-item h3, p {
+    color: #181D25;
+}
 
 
 /*** About & Feature ***/
@@ -321,7 +353,9 @@ h6,
     z-index: -1;
 }
 
-
+.section-about>h1,p{
+    color: #F5F5F5;
+}
 /*** Service ***/
 .service-item .bg-img {
     position: absolute;
@@ -363,7 +397,12 @@ h6,
 .service-item:hover .btn {
     width: 140px;
 }
-
+.service-text h3 {
+    color: #181D25;
+}
+.service-text p {
+    color: #181D25;
+}
 
 /*** Project ***/
 .project .nav .nav-link {
@@ -527,6 +566,8 @@ h6,
     font-weight: normal;
     text-transform: capitalize;
     transition: .3s;
+    font-family: 'Montserrat';
+    color: #F5F5F5;
 }
 
 .footer .btn.btn-link::before {
